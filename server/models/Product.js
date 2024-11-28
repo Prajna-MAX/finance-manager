@@ -8,12 +8,12 @@ const ProductSchema = new Schema(
   {
     price: {
       type: mongoose.Types.Currency,
-      currency: "INR",
+      currency: "USD",
       get: (v) => v / 100,
     },
     expense: {
       type: mongoose.Types.Currency,
-      currency: "INR",
+      currency: "USD",
       get: (v) => v / 100,
     },
     transactions: [
